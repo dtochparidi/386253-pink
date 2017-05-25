@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Dmitrijs Tohparidi](https://up.htmlacademy.ru/adaptive/11/user/386253).
-* Наставник: Алексей Ткаченко.
+* Наставник: Алексей Ткаченко https://htmlacademy.ru/profile/id411159
 
 ---
 
