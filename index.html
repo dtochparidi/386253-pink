@@ -2,11 +2,101 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="keywords" content="Приложение PINK">
+    <meta name="description" content="Сайт приложения Pink">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.mini.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="main-nav__logo-link"><img class="main-nav__logo" src="http://placehold.it/50x50" alt="Pink" width="100" height="100"></a>
+        <span class="main-nav__burger-icon"></span>
+      </nav>
+    </header>
+    <section class="download-block">
+      <button class="btn" type="button">Скачать приложение</button>
+      <div class="platforms">
+       <a class="platforms__item"><img src="http://placehold.it/50x50" aria-label="Скачать приложение для Ios" alt="Ios"><span class="download-block__hidden-title">Скачать приложение для Ios</span></a>
+       <a class="platforms__item"><img src="http://placehold.it/50x50" aria-label="Скачать приложение Аndroid" alt="Android"><span class="download-block__hidden-title">Скачать приложение Аndroid</span></a>
+       <a class="platforms__item"><img src="http://placehold.it/50x50" aria-label="Скачать приложение для Windows Mobile" alt="Windows Mobile"><span class="download-block__hidden-title">Скачать приложение для Windows Mobile</span></a>
+      </div>
+      <p class="download-block__dscr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
+    <section class="promotion-block">
+      <p class="promotion-block__title">
+         <span class="promotion-block__title-item">Устали от серости мегаполиса?</span>
+         <span class="promotion-block__title-item">Нам есть, что вам предложить!</span>
+      </p>
+      <div class="promotion-block__features">
+        <article class="features-item">
+          <h2 class="features-item__title">Поднимает настроение</h2>
+          <p class="features-item__dscr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </article>
+        <article class="features-item">
+          <h2 class="features-item__title">Меняет мир вокруг</h2>
+          <p class="features-item__dscr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </article>
+        <article class="features-item">
+          <h2 class="features-item__title">Заводит новых друзей</h2>
+          <p class="features-item__dscr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </article>
+      </div>
+      <span class="promotion-block__title"><h3>Всем привет!</h3></span>
+    </section>
+    <section class="review-block">
+      <article class="review-article">
+        <h2 class="review-article__title">Николай Петров</h2>
+        <p class="review-article__dscr">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+           А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </article>
+      <article class="review-article">
+        <h2 class="review-article__title">Николай Петров</h2>
+        <p class="review-article__dscr">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </article>
+      <article class="review-article">
+        <h2 class="review-article__title">Николай Петров</h2>
+        <p class="review-article__dscr">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </article>
+      <div class="pagination">
+        <span class="pagination__togle"></span>
+        <span class="pagination__togle"></span>
+        <span class="pagination__togle"></span>
+      </div>
+    </section>
+    <section class="price-block">
+      <header class="price-block__header">
+       <div class="price-block__tag">ХИТ</div>
+       <b>СТАНДАРТ</b>
+       <span>3,99 USD</span>
+      </header>
+      <div class="price-block__item">Розовый фильтр<span class="price-block__item-check"></span></div>
+      <div class="price-block__item">Смайлики<span class="price-block__item-check"></span></div>
+      <div class="price-block__item">Комментарии<span class="price-block__item-cross"></span></div>
+      <div class="pagination">
+        <span class="pagination__togle"></span>
+        <span class="pagination__togle"></span>
+        <span class="pagination__togle"></span>
+      </div>
+    </section>
+    <footer class="footer-block">
+      <p class="footer-block__title">Остались вопросы? Свяжитесь с нами!</p>
+      <article class="call-block">
+        <b class="call-block__title">Звоните:</b>
+        <a class="call-block__tel" href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
+      </article>
+      <address class="mail-block">
+        <b class="mail-block">Пишите:</b>
+        <a class="call-block__tel" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </address>
+      <article class="address-block">
+        <b class="address-block__title">Приезжайте в гости:</b>
+        <p class="address-block__address">ул. Большая Конюшенная, 19/8</p>
+      </article>
+    </footer>
   </body>
 </html>
