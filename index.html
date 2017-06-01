@@ -11,21 +11,38 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav__container">
         <a class="main-nav__logo-link"><img class="main-nav__logo" src="http://placehold.it/50x50" alt="Pink" width="100" height="100"></a>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item"><a href="#" title="Главная">Главная</a></li>
+          <li class="main-nav__list-item"><a href="#" title="Фотографии">Фотографии</a></li>
+          <li class="main-nav__list-item"><a href="#" title="Конкурс">Конкурс</a></li>
+          <li class="main-nav__list-item"><a href="#" title="HTML Academy">HTML Academy</a></li>
+        </ul>
         <span class="main-nav__burger-icon"></span>
       </nav>
+      <section class="download-block">
+        <h2 class="download-block__title">Скачайте приложение Pink</h2> <!--hidden-->
+        <b class="download-block__promo-text!">Взгляните на жизнь иначе</b>
+        <button class="btn" type="button">Скачать приложение</button>
+        <div class="platforms">
+          <a class="platforms__item">
+            <img src="http://placehold.it/50x50" aria-label="Скачать приложение для Ios" alt="Ios">
+            <span class="download-block__hidden-title">Скачать приложение для Ios</span><!--hidden-->
+          </a>
+          <a class="platforms__item">
+            <img src="http://placehold.it/50x50" aria-label="Скачать приложение Аndroid" alt="Android">
+            <span class="download-block__hidden-title">Скачать приложение Аndroid</span><!--hidden-->
+          </a>
+          <a class="platforms__item">
+            <img src="http://placehold.it/50x50" aria-label="Скачать приложение для Windows Mobile" alt="Windows Mobile">
+            <span class="download-block__hidden-title">Скачать приложение для Windows Mobile</span><!--hidden-->
+          </a>
+        </div>
+        <p class="download-block__dscr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <span class="download-block__main-image"></span>
     </header>
-    <section class="download-block">
-      <h2 class="download-block__title">Скачайте приложение Pink</h2> <!--hidden-->
-      <button class="btn" type="button">Скачать приложение</button>
-      <div class="platforms">
-       <a class="platforms__item"><img src="http://placehold.it/50x50" aria-label="Скачать приложение для Ios" alt="Ios"><span class="download-block__hidden-title">Скачать приложение для Ios</span></a>
-       <a class="platforms__item"><img src="http://placehold.it/50x50" aria-label="Скачать приложение Аndroid" alt="Android"><span class="download-block__hidden-title">Скачать приложение Аndroid</span></a>
-       <a class="platforms__item"><img src="http://placehold.it/50x50" aria-label="Скачать приложение для Windows Mobile" alt="Windows Mobile"><span class="download-block__hidden-title">Скачать приложение для Windows Mobile</span></a>
-      </div>
-      <p class="download-block__dscr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </section>
     <section class="promotion-block">
       <h2 class="promotion-block__title">Приемущества Pink</h2> <!--hidden-->
       <p class="promo-text">
@@ -34,34 +51,36 @@
       </p>
       <div class="promotion-block__features">
         <article class="features-item">
-          <h2 class="features-item__title">Поднимает настроение</h2>
+          <span class="features-item__img"></span>
+          <h3 class="features-item__title">Поднимает настроение</h3>
           <p class="features-item__dscr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </article>
         <article class="features-item">
-          <h2 class="features-item__title">Меняет мир вокруг</h2>
+          <span class="features-item__img features-item__img--color"></span>
+          <h3 class="features-item__title">Меняет мир вокруг</h3>
           <p class="features-item__dscr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </article>
         <article class="features-item">
-          <h2 class="features-item__title">Заводит новых друзей</h2>
+          <span class="features-item__img features-item__img--background"></span>
+          <h3 class="features-item__title">Заводит новых друзей</h3>
           <p class="features-item__dscr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
         </article>
       </div>
-      <span class="promotion-block__title"><b>Всем привет!</b></span>
     </section>
     <section class="review-block">
       <h2 class="review-block__title">Отзывы о Pink</h2> <!--hidden-->
       <article class="review-article">
-        <h2 class="review-article__title">Николай Петров</h2>
+        <h3 class="review-article__title">Николай Петров</h3>
         <p class="review-article__dscr">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </article>
       <article class="review-article">
-        <h2 class="review-article__title">Николай Петров</h2>
+        <h3 class="review-article__title">Николай Петров</h3>
         <p class="review-article__dscr">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </article>
       <article class="review-article">
-        <h2 class="review-article__title">Николай Петров</h2>
+        <h3 class="review-article__title">Николай Петров</h3>
         <p class="review-article__dscr">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </article>
