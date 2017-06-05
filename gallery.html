@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Приложение PINK">
+  <meta name="description" content="Сайт приложения Pink">
+  <title>HTML Academy: Пинк</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="page-header__title  page-header__title--gallery">Фотографии пользователей</h1>
+    <div class="page-header__nav">
+      <div class="page-header__nav-container">
+        <a class="page-header__logo-link"><img class="page-header__logo" src="http://placehold.it/50x50" alt="Pink" width="100" height="100"></a>
+        <span class="main-nav__toggler"><span></span></span>
+        <nav class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item  main-nav__item--active"><a title="Главная">Главная</a></li>
+            <li class="main-nav__item"><a href="#" title="Фотографии">Фотографии</a></li>
+            <li class="main-nav__item"><a href="#" title="Конкурс">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#" title="HTML Academy">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="gallery">
+    <h2 class="gallery__title">Фотогалерея Pink</h2><!--hidden-->
+    <p class="gallery__text">
+      Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+    </p>
+    <div class="gallery__item  gallery__item--panorama">
+      <img src="http://placehold.it/300x50" alt="panorama of the day" width="300" height="50">
+      <div class="gallery__panorama-tag"></div>
+      <div class="gallery__descr">
+        <h3 class="gallery__comment-author">Анна<span class="gallery__descr-title-time">(5 минут назад)</span></h3>
+        <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+        <span class="like">Нравится: 215</span>
+      </div>
+    </div>
+    <div class="gallery__item">
+      <img src="http://placehold.it/50x50" alt="photo" width="50" height="50">
+      <div class="gallery__descr">
+        <h3 class="gallery__comment-author">Сергей<span class="gallery__descr-title-time">(25 часов назад)</span></h3>
+        <p>Самая кубанская в мире!</p>
+        <span class="like">Нравится: 4</span>
+      </div>
+    </div>
+    <div class="gallery__item">
+      <img src="http://placehold.it/50x50" alt="photo" width="50" height="50">
+      <div class="gallery__descr">
+        <h3 class="gallery__comment-author">Максим<span class="gallery__descr-title-time">(40 часов назад)</span></h3>
+        <p>Где снег-то?</p>
+        <span class="like">Нравится: 150</span>
+      </div>
+    </div>
+    <div class="gallery__item">
+      <img src="http://placehold.it/50x50" alt="photo" width="50" height="50">
+      <div class="gallery__descr">
+        <h3 class="gallery__comment-author">Надежда<span class="gallery__descr-title-time">(45 часов назад)</span></h3>
+        <p>Всем GM и взаимные лайки!</p>
+        <span class="like">Нравится: 2560</span>
+      </div>
+    </div>
+    <p class="gallery__text">
+      Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+    </p>
+  </section>
+  <section class="new-post">
+    <div class="new-post__img-wrapper">
+      <h2 class="new-post__title">Добавление нового поста</h2><!--hidden-->
+      <img class="new-post__img" src="http://placehold.it/100x300" alt="new photo" width="100" height="300">
+    </div>
+    <div class="new-post__tools">
+      <div class="new-post__tools-wrapper">
+        <span class="new-post__crop">crop</span>
+        <span class="new-post__fill">fill</span>
+        <span class="new-post__bright">bright</span>
+      </div>
+      <span class="new-post__size">
+        <span class="new-post__size-toggle"></span>
+      </span>
+    </div>
+    <div class="new-post__btn-wrapper">
+      <button class="new-post__btn-post" type="button" value="post">Запостить</button>
+      <button class="new-post__btn-cancel" type="button" value="cancel">Отмена</button>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <h2 class="page-footer__title">Текст</h2><!--hidden-->
+      <img class="page-footer__logo" src="http://placehold.it/100x300" alt="logo" width="50" height="50">
+      <div class="social">
+        <span class="social__item social__item--twitter" aria-label="twitter">twitter</span>
+        <span class="social__item social__item--fb" aria-label="fb">fb</span>
+        <span class="social__item social__item--play" aria-label="play">play</span>
+      </div>
+      <span class="page-footer__develop">Разработано
+        <img class="page-footer__develop-logo" src="http://placehold.it/30x30" alt="logo" width="50" height="50" aria-label="html-academy">
+      </span>
+    </div>
+  </footer>
+</body>
+
+</html>
