@@ -17,6 +17,7 @@
     <div class="page-header__nav">
       <div class="page-header__nav-container">
         <a class="page-header__logo-link"><img class="page-header__logo" src="http://placehold.it/50x50" alt="Pink" width="100" height="100"></a>
+        <span class="main-nav__toggler"><span></span></span>
         <nav class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__item--active"><a title="Главная">Главная</a></li>
@@ -24,7 +25,6 @@
             <li class="main-nav__item"><a href="#" title="Конкурс">Конкурс</a></li>
             <li class="main-nav__item"><a href="#" title="HTML Academy">HTML Academy</a></li>
           </ul>
-          <span class="main-nav__toggler"><span></span></span>
         </nav>
       </div>
     </div>
@@ -61,14 +61,17 @@
         <article class="features__article  features__article--mood">
           <h3 class="features__article-title">Поднимает настроение</h3>
           <p class="features__article-dscr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <span class="features__article-img"></span>
         </article>
         <article class="features__article  features__article--world">
           <h3 class="features__article-title">Меняет мир вокруг</h3>
           <p class="features__article-dscr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <span class="features__article-img"></span>
         </article>
         <article class="features__article features__article--friends">
           <h3 class="features__article-title">Заводит новых друзей</h3>
           <p class="features__article-descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          <span class="features__article-img"></span>
         </article>
       </div>
     </div>
@@ -88,10 +91,10 @@
         <h3>Николай Петров</h3>
         <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </article>
-      <div class="reviews__pagination">
-        <span class="reviews__pagination-toggle review__pagination-toggle--active"></span>
-        <span class="reviews__pagination-toggle"></span>
-        <span class="reviews__pagination-toggle"></span>
+      <div class="pagination pagination-reviews">
+        <span class="pagination__toggle pagination__toggle--active"></span>
+        <span class="pagination__toggle"></span>
+        <span class="pagination__toggle"></span>
       </div>
     </div>
   </section>
@@ -109,22 +112,23 @@
       <div class="price__item">Смайлики<span class="price__check"></span></div>
       <div class="price__item">Комментарии<span class="price__cross"></span></div>
     </div>
-    <div class="price__pagination">
-      <span class="price__pagination-toggle price__pagination-toggle--active"></span>
-      <span class="price__pagination-toggle"></span>
-      <span class="price__pagination-toggle"></span>
+    <div class="pagination pagination--price">
+      <span class="pagination__toggle pagination__toggle--active"></span>
+      <span class="price__toggle"></span>
+      <span class="price__toggle"></span>
     </div>
   </section>
   <section class="contacts">
-    <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+    <h2 class="contacts__title">Контакты:</h2><!--hidden-->
+    <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
     <article class="call">
       <h3 class="call__legend">Звоните:</h3>
       <a class="call__tel" href="tel:+78125556666">+7 (812) 555-66-66</a>
     </article>
-    <address class="mail">
+    <div class="mail">
         <b class="mail__legend">Пишите:</b>
         <a class="mail__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    </address>
+    </div>
     <article class="address">
       <h2 class="address__title">Наш адресс</h2><!--hidden-->
       <b class="address__legend">Приезжайте в гости:</b>
@@ -134,12 +138,12 @@
   </section>
   <footer class="page-footer page-footer--index">
     <div class="page-footer__wrapper">
-      <h2 class="page-footer__title"></h2><!--hidden-->
+      <h2 class="page-footer__title">Подвал сайта:</h2><!--hidden-->
       <img class="page-footer__logo" src="http://placehold.it/100x300" alt="logo" width="50" height="50">
       <div class="social">
-        <span class="social-item social-item--twitter" aria-label="twitter">twitter</span>
-        <span class="social-item social-item--fb" aria-label="fb">fb</span>
-        <span class="social-item social-item--play" aria-label="play">play</span>
+        <span class="social__item social__item--twitter" aria-label="twitter">twitter</span>
+        <span class="social__item social__item--fb" aria-label="fb">fb</span>
+        <span class="social__item social__item--play" aria-label="play">play</span>
       </div>
       <span class="page-footer__develop">Разработано
         <img class="page-footer__develop-logo" src="http://placehold.it/30x30" alt="logo" width="50" height="50" aria-label="html-academy">

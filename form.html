@@ -17,6 +17,7 @@
     <div class="page-header__nav">
       <div class="page-header__nav-container">
         <a class="page-header__logo-link"><img class="page-header__logo" src="http://placehold.it/50x50" alt="Pink" width="100" height="100"></a>
+        <span class="main-nav__toggler"><span></span></span>
         <nav class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__item--active"><a title="Главная">Главная</a></li>
@@ -24,7 +25,6 @@
             <li class="main-nav__item"><a href="#" title="Конкурс">Конкурс</a></li>
             <li class="main-nav__item"><a href="#" title="HTML Academy">HTML Academy</a></li>
           </ul>
-          <span class="main-nav__toggler"><span></span></span>
         </nav>
       </div>
     </div>
@@ -37,40 +37,40 @@
     <form class="form" action="https://echo.htmlacademy.ru/" method="get" name="interview">
       <div class="form__personal">
         <div class="form__personal-container">
-          <label>Фамилия:<input type="text" name="l-name" placeholder="Укажите фамилию *"></label>
-          <label>Имя:<input type="text" name="f-name" placeholder="Введите ваше имя *"></label>
-          <label>Отчество:<input type="text" name="l-name" placeholder="Ну и отчество тоже *"></label>
+          <label class="form__label">Фамилия:<input type="text" name="l-name" placeholder="Укажите фамилию *"></label>
+          <label class="form__label">Имя:<input type="text" name="f-name" placeholder="Введите ваше имя *"></label>
+          <label class="form__label">Отчество:<input type="text" name="th-name" placeholder="Ну и отчество тоже *"></label>
         </div>
       </div>
       <fieldset class="form__achievements">
-        <legend class="form__achievements-legend">Ваши безбашенные достижения в путешествии</legend>
+        <legend class="form__legend form__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
         <div class="form__achievements-container">
-          <label><input type="checkbox" name="selfie" checked>Сделал селфи с акулой</label>
-          <label><input type="checkbox" name="beach" checked>Обгорел на пляже</label>
-          <label><input type="checkbox" name="chack">Видел Чака Норриса</label>
-          <label><input type="checkbox" name="souvenir">Накупил сувениров</label>
-          <label><input type="checkbox" name="tower" checked>Удержал башню</label>
-          <label><input type="checkbox" name="hotel">Разгромил отель</label>
+          <label class="form__label"><input type="checkbox" name="selfie" checked>Сделал селфи с акулой</label>
+          <label class="form__label"><input type="checkbox" name="beach" checked>Обгорел на пляже</label>
+          <label class="form__label"><input type="checkbox" name="chack">Видел Чака Норриса</label>
+          <label class="form__label"><input type="checkbox" name="souvenir">Накупил сувениров</label>
+          <label class="form__label"><input type="checkbox" name="tower" checked>Удержал башню</label>
+          <label class="form__label"><input type="checkbox" name="hotel">Разгромил отель</label>
         </div>
       </fieldset>
       <div class="form__contacts">
         <div class="form__contacts-container">
-          <label>Номер телефона<input type="text" name="phone" placeholder="Номер, пожалуйста"></label>
-          <label>адрес почты<input type="text" name="email" placeholder="Введите почту *"></label>
+          <label class="form__label">Номер телефона<input type="text" name="phone" placeholder="Номер, пожалуйста"></label>
+          <label class="form__label">адрес почты<input type="text" name="email" placeholder="Введите почту *"></label>
         </div>
       </div>
       <fieldset class="form__app">
-        <legend class="form__app-legend">С каким приложением путешествовали?</legend>
+        <legend class="form__legend--app">С каким приложением путешествовали?</legend>
         <div class="form__app-container">
-          <label><input type="radio" name="ios" checked>Pink для iOS</label>
-          <label><input type="radio" name="android">Pink на Android</label>
-          <label><input type="radio" name="phone">Windows Phone</label>
+          <label class="form__label"><input type="radio" name="ios" checked>Pink для iOS</label>
+          <label class="form__label"><input type="radio" name="android">Pink на Android</label>
+          <label class="form__label"><input type="radio" name="phone">Windows Phone</label>
         </div>
       </fieldset>
-      <fieldset class="form__textaera">
-        <legend class="form__textaera-legend">Опишите свои эмоции</legend>
+      <fieldset class="form__textarea">
+        <legend class="form__legend form__legend--textarea">Опишите свои эмоции</legend>
         <div class="form__textaera-container">
-          <label>
+          <label class="form__label">
             <textarea name="textaera" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </label>
         </div>
@@ -88,9 +88,9 @@
       <h2 class="page-footer__title">Текст</h2><!--hidden-->
       <img class="page-footer__logo" src="http://placehold.it/100x300" alt="logo" width="50" height="50">
       <div class="social">
-        <span class="social-item social-item--twitter" aria-label="twitter">twitter</span>
-        <span class="social-item social-item--fb" aria-label="fb">fb</span>
-        <span class="social-item social-item--play" aria-label="play">play</span>
+        <span class="social__item social__item--twitter" aria-label="twitter">twitter</span>
+        <span class="social__item social__item--fb" aria-label="fb">fb</span>
+        <span class="social__item social__item--play" aria-label="play">play</span>
       </div>
       <span class="page-footer__develop">Разработано
         <img class="page-footer__develop-logo" src="http://placehold.it/30x30" alt="logo" width="50" height="50" aria-label="html-academy">
