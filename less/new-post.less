@@ -1,0 +1,130 @@
+.new-post {
+  display: flex;
+}
+
+.new-post__wrapper {
+  .container;
+}
+
+.new-post__title {
+  position: absolute;
+  visibility: hidden;
+}
+
+.new-post__container {
+  width: 90%;
+  min-height: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .outline;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.new-post__tools {
+  .outline;
+  width: 40%;
+  min-height: 200px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.new-post__img-wrapper {
+  .outline;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+.new-post__img {
+  width: 300px;
+  height: 300px;
+}
+
+.new-post__crop-wrapper, .new-post__fill-wrapper, .new-post__bright-wrapper {
+  .outline;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 60px;
+}
+
+.new-post__btn-wrapper {
+  .outline;
+  margin-top: 100px;
+}
+
+.new-post__crop-icon, .new-post__fill-icon, .new-post__bright-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: black;
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+}
+
+.new-post__crop, .new-post__fill, .new-post__bright {
+  .outline;
+  text-align: center;
+}
+
+@media (max-width: 660px) {
+
+  .new-post__wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .new-post__container {
+    width: auto;
+  }
+
+}
+
+@media (max-width: 626px) {
+
+  .new-post__container {
+    justify-content: center;
+  }
+
+  .new-post__tools {
+    width: 300px;
+    margin-top: 0px;
+  }
+
+  .new-post__img-wrapper {
+    margin-right: 0px;
+  }
+
+  .new-post__crop-wrapper, .new-post__fill-wrapper, .new-post__bright-wrapper {
+    position: absolute;
+    width: 100%;
+  }
+
+  .new-post__fill-wrapper, .new-post__bright-wrapper {
+    visibility: hidden;
+  }
+
+  .new-post__crop, .new-post__fill, .new-post__bright {
+    width: 100%;
+  }
+
+  .new-post__crop-icon, .new-post__fill-icon, .new-post__bright-icon {
+    visibility: visible;
+  }
+
+  .new-post__fill-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .new-post__bright-icon {
+    margin-left: 250px;
+  }
+
+}

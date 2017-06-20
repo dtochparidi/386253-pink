@@ -1,0 +1,52 @@
+.promotion {
+  outline: 3px solid yellow;
+  display: flex;
+}
+
+.promotion__wrapper {
+  .container;
+  outline: 2px solid blue;
+}
+
+.promotion__title {
+  position: absolute;
+  visibility: hidden;
+}
+
+.promotion__research {
+  .outline;
+  width: 60%;
+  margin-left: auto;
+}
+
+.promotion__text {
+  .outline;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promotion__text-sentence {
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 660px) {
+
+  .promotion {
+    width: auto;
+  }
+
+  .promotion__wrapper {
+    width: auto;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .promotion__research {
+    display: none;
+  }
+
+}
