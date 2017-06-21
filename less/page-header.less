@@ -1,0 +1,90 @@
+.page-header {
+  outline: 3px solid red;
+  background-color: #1d2631;
+}
+
+.page-header__title {
+  position: absolute;
+  visibility: hidden;
+}
+
+.page-header__nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  outline: 3px solid red;
+  width: auto;
+}
+
+.page-header__nav-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 110px;
+  .container;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  outline: 3px solid yellow;
+}
+
+.page-header__logo-link {
+  outline: 1px solid red;
+  display: block;
+}
+
+.page-header__logo {
+  height: 40px;
+  margin-top: 27px;
+}
+
+.main-nav__toggler {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  display: none;
+}
+
+.page-header__text-wrapper {
+  min-height: 200px;
+  display: flex;
+  outline: 1px solid blue;
+}
+
+.page-header__text-container {
+  .container;
+  padding-top: 70px;
+}
+
+.page-header__text {
+  display:block;
+  text-align: center;
+  .outline;
+  width: 30%;
+  margin: 0 auto;
+}
+
+@media (max-width: 660px)  {
+
+  .page-header__nav-container {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .page-header__logo {
+    margin-bottom: 27px;
+  }
+
+  .main-nav__toggler {
+    display: block;
+  }
+
+  .page-header__logo-link {
+    margin-left: 20px;
+  }
+
+}

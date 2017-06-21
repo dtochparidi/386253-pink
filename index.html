@@ -5,10 +5,11 @@
   <meta charset="utf-8">
   <meta name="keywords" content="Приложение PINK">
   <meta name="description" content="Сайт приложения Pink">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -21,32 +22,34 @@
         <nav class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__item--active"><a title="Главная">Главная</a></li>
-            <li class="main-nav__item"><a href="#" title="Фотографии">Фотографии</a></li>
-            <li class="main-nav__item"><a href="#" title="Конкурс">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#" title="HTML Academy">HTML Academy</a></li>
+            <li class="main-nav__item"><a href="gallery.html" title="Фотографии">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html" title="Конкурс">Конкурс</a></li>
+            <li class="main-nav__item"><a href="http://www.htmlacademy.ru" title="HTML Academy">HTML Academy</a></li>
           </ul>
         </nav>
       </div>
     </div>
     <section class="app">
-      <h2 class="app__title">Скачайте приложение Pink</h2><!--hidden-->
-      <b class="app__promo-text">Взгляните на жизнь иначе</b>
-      <button class="btn" type="button">Скачать приложение</button>
-      <div class="app__platforms">
-        <a class="ios">
+      <div class="app__container">
+        <h2 class="app__title">Скачайте приложение Pink</h2><!--hidden-->
+        <b class="app__promo-text">Взгляните на жизнь иначе</b>
+        <button class="btn" type="button">Скачать приложение</button>
+        <div class="app__platforms">
+          <a class="ios">
             <img src="http://placehold.it/50x50" aria-label="Скачать приложение для Ios" alt="Ios">
             <span class="ios__title">Скачать приложение для Ios</span><!--hidden-->
-        </a>
-        <a class="android">
+          </a>
+          <a class="android">
             <img src="http://placehold.it/50x50" aria-label="Скачать приложение Аndroid" alt="Android">
             <span class="android__title">Скачать приложение Аndroid</span><!--hidden-->
-        </a>
-        <a class="win-mobile">
+          </a>
+          <a class="win-mobile">
             <img src="http://placehold.it/50x50" aria-label="Скачать приложение для Windows Mobile" alt="Windows Mobile">
             <span class="win-mobile__title">Скачать приложение для Windows Mobile</span><!--hidden-->
-        </a>
+          </a>
+        </div>
+        <p class="app__dscr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-      <p class="app__dscr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       <span class="app__main-image"></span>
     </section>
   </header>
@@ -55,7 +58,7 @@
       <h2 class="promotion__title">Приемущества Pink</h2><!--hidden-->
       <div class="promotion__text">
         <span class="promotion__text-sentence">Устали от серости мегаполиса?</span>
-        <span class="promotion__text-sentence">Нам есть, что вам предложить!</span>
+        <span class="promotion__text-sentence">Нам есть, что вам<br> предложить!</span>
       </div>
       <div class="features">
         <article class="features__article  features__article--mood">
@@ -74,21 +77,37 @@
           <span class="features__article-img"></span>
         </article>
       </div>
+      <div class="promotion__research">
+        <h3 class="promotion__research-title">Эффект на 24 часа!</h3>
+        <p class="promotion__research-descr">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="promotion__research-link" href="#" title="more">Узнать больше об исследовании</a>
+        <span class="promotion__research-img"></span>
+      </div>
     </div>
   </section>
   <section class="reviews">
     <div class="reviews__wrapper">
       <h2 class="reviews__title">Отзывы о Pink</h2><!--hidden-->
-      <article class="reviews__article">
-        <h3>Николай Петров</h3>
+      <span class="reviews__img"></span>
+      <article class="reviews__article reviews__article--1">
+        <div class="reviews__article-author">
+          <h3>1Николай Петров</h3>
+          <span>25 лет, водитель трамвая</span>
+        </div>
         <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </article>
-      <article class="reviews__article">
-        <h3>Николай Петров</h3>
+      <article class="reviews__article reviews__article--2">
+        <div class="reviews__article-author">
+          <h3>2Николай Петров</h3>
+          <span>25 лет, водитель трамвая</span>
+        </div>
         <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </article>
-      <article class="reviews__article">
-        <h3>Николай Петров</h3>
+      <article class="reviews__article reviews__article--3">
+        <div class="reviews__article-author">
+          <h3>3Николай Петров</h3>
+          <span>25 лет, водитель трамвая</span>
+        </div>
         <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </article>
       <div class="pagination pagination-reviews">
@@ -96,58 +115,82 @@
         <span class="pagination__toggle"></span>
         <span class="pagination__toggle"></span>
       </div>
+      <span class="reviews__toggle reviews__toggle--left"></span>
+      <span class="reviews__toggle reviews__toggle--rigth"></span>
     </div>
   </section>
   <section class="price">
-    <h2 class="price__title">Цены Pink</h2><!--hidden-->
-    <header class="price__header">
-      <div class="price__header-wrapper">
-        <div class="price__tag">ХИТ</div>
-        <b class="price__name">СТАНДАРТ</b>
-        <span class="price__value">3,99 USD</span>
+    <div class="price__wrapper">
+      <h2 class="price__title">Цены Pink</h2><!--hidden-->
+      <div class="price__table">
+        <div class="price__tr price__tr--header">
+          <div class="price__td"></div>
+          <div class="price__td"><b>База</b><br><span>1,99 USD</span></div>
+          <div class="price__td"><span class="span__td-tag"></span><b>Стандарт</b><br><span>3,99 USD</span></div>
+          <div class="price__td"><b>Анлим</b><br><span>9,99 USD</span></div>
+        </div>
+        <div class="price__tr">
+          <div class="price__td">Розовый фильтр</div>
+          <div class="price__td">2</div>
+          <div class="price__td">3</div>
+          <div class="price__td">4</div>
+        </div>
+        <div class="price__tr">
+          <div class="price__td">Смайлики</div>
+          <div class="price__td">2</div>
+          <div class="price__td">3</div>
+          <div class="price__td">4</div>
+        </div>
+        <div class="price__tr">
+          <div class="price__td">Комментарии</div>
+          <div class="price__td">2</div>
+          <div class="price__td">3</div>
+          <div class="price__td">4</div>
+        </div>
       </div>
-    </header>
-    <div class="price__list">
-      <div class="price__item">Розовый фильтр<span class="price__check"></span></div>
-      <div class="price__item">Смайлики<span class="price__check"></span></div>
-      <div class="price__item">Комментарии<span class="price__cross"></span></div>
-    </div>
-    <div class="pagination pagination--price">
-      <span class="pagination__toggle pagination__toggle--active"></span>
-      <span class="price__toggle"></span>
-      <span class="price__toggle"></span>
     </div>
   </section>
   <section class="contacts">
-    <h2 class="contacts__title">Контакты:</h2><!--hidden-->
-    <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
-    <article class="call">
-      <h3 class="call__legend">Звоните:</h3>
-      <a class="call__tel" href="tel:+78125556666">+7 (812) 555-66-66</a>
-    </article>
-    <div class="mail">
-        <b class="mail__legend">Пишите:</b>
-        <a class="mail__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    <div class="contacts__wrapper">
+    <div class="contacts__container">
+      <h2 class="contacts__title">Контакты:</h2><!--hidden-->
+      <p class="contacts__text">Остались вопросы?<br> Свяжитесь с нами!</p>
+      <div class="contacts__articles-wrapper">
+        <article class="call">
+          <h3 class="call__title">Звоните нам</h3><!--hidden-->
+          <b class="call__legend">Звоните:</b><br>
+          <a class="call__tel" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </article>
+        <div class="mail">
+          <b class="mail__legend">Пишите:</b><br>
+          <a class="mail__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <article class="address">
+          <h2 class="address__title">Наш адресс</h2><!--hidden-->
+          <b class="address__legend">Приезжайте в гости:</b>
+          <p class="address__address">ул. Большая Конюшенная, 19/8</p>
+        </article>
+      </div>
     </div>
-    <article class="address">
-      <h2 class="address__title">Наш адресс</h2><!--hidden-->
-      <b class="address__legend">Приезжайте в гости:</b>
-      <p class="address__address">ул. Большая Конюшенная, 19/8</p>
-    </article>
+    </div>
     <span class="contacts__map"></span>
   </section>
   <footer class="page-footer page-footer--index">
     <div class="page-footer__wrapper">
       <h2 class="page-footer__title">Подвал сайта:</h2><!--hidden-->
-      <img class="page-footer__logo" src="http://placehold.it/100x300" alt="logo" width="50" height="50">
+      <div class="page-footer__logo-wrapper">
+        <img class="page-footer__logo" src="http://placehold.it/100x300" alt="logo" width="50" height="50">
+      </div>
       <div class="social">
         <span class="social__item social__item--twitter" aria-label="twitter">twitter</span>
         <span class="social__item social__item--fb" aria-label="fb">fb</span>
         <span class="social__item social__item--play" aria-label="play">play</span>
       </div>
-      <span class="page-footer__develop">Разработано
-        <img class="page-footer__develop-logo" src="http://placehold.it/30x30" alt="logo" width="50" height="50" aria-label="html-academy">
-      </span>
+      <div class="page-footer__develop-wrapper">
+        <span class="page-footer__develop">Разработано
+          <img class="page-footer__develop-logo" src="http://placehold.it/30x30" alt="logo" width="50" height="50" aria-label="html-academy">
+        </span>
+      </div>
     </div>
   </footer>
 </body>

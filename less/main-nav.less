@@ -1,0 +1,46 @@
+.main-nav__wrapper {
+  outline: 2px solid blue;
+  margin-left: auto;
+  width: 70%;
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px;
+  margin-left: auto;
+  padding: 0px;
+  outline: 3px solid red;
+  margin-top: 48px;
+}
+
+.main-nav__item {
+  display: inline-block;
+  outline: 1px solid red;
+  margin-left: 10px;
+}
+
+@media (max-width: 660px) {
+
+.main-nav__wrapper {
+  width: 100%;
+}
+
+.main-nav__list {
+  margin-top: 0px;
+}
+
+.main-nav__item {
+  margin: 0px;
+  width: 100%;
+}
+
+.main-nav__item a{
+  display: block;
+  width: 100%;
+  min-height: 63px;
+  text-align: center;
+}
+
+}
